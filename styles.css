@@ -1,0 +1,49 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wrapper .input {
+  width: 50px;
+  font-size: 35px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #fff;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.wrapper .input:focus {
+  border-color: #4070f4;
+}
+
+.wrapper .input:nth-child(1) {
+  pointer-events: auto;
+  cursor: pointer;
+}
